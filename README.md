@@ -27,4 +27,4 @@ List of dependencies:
 
 # Test results
 
-![Test results](test_results.png)
+![Test results](test-results.png "Test results")
