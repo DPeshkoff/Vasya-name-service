@@ -24,3 +24,7 @@ List of dependencies:
 |  ‎ record-set | --uid, --ipfs_link, --sig  | Status of operation |
 |  ‎ record-get | --uid | Link | 
 |  ‎ record-test | — | Test results | 
+
+# Test results
+
+![Test results](test_results.png)

@@ -78,8 +78,8 @@ def name_service_set(uid, link, raw_link):
     """
 
     try:
-        # get name|key
-        name, key = uid.split(":")[0].encode('utf-8'), uid.split(":")[1]
+        # get key
+        key = uid.split(":")[1]
 
         # CRYTGOGRAPHY.HAZMAT LEGACY
         #key.verify(link, raw_link, ec.ECDSA(hashes.SHA256()))
@@ -93,7 +93,7 @@ def name_service_set(uid, link, raw_link):
         except:
             return "Error: VerificationFailed"
         else:
-            NAMES[name.decode('utf-8')] = raw_link.decode('utf-8')
+            NAMES[uid] = raw_link.decode('utf-8')
             return "OK: VerificationPassed, LinkUpdated"
     except:
         return "Error: UnknownError@Get"
